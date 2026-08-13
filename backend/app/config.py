@@ -3,7 +3,7 @@ from functools import lru_cache
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
-class Settings:
+class Settings(BaseSettings):
     app_name: str = "RestaurantManagementSystem"
     app_version: str = "1.0.0"
 
